@@ -15,4 +15,4 @@ Para instalar este repositorio web, simplemente sigue estos pasos:
 
 4. Abre tu navegador web y navega a la dirección de tu servidor para ver la aplicación en funcionamiento.
 
-¡Eso es todo!
+¡Eso es todo amigos 😁!
