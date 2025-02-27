@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400&display=swap");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ vertical-align: baseline;
+ }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+ display: block;
+ }
+
+body {
+ line-height: initial;
+ }
+
+ol, ul {
+ list-style: none;
+ }
+
+blockquote, q {
+ quotes: none;
+ }
+
+blockquote:before, blockquote:after, q:before, q:after {
+ content: '';
+ content: none;
+ }
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+
+:focus {
+ outline: 0;
+ }
+
+img {
+ border: 0;
+ }
+
+* {
+ box-sizing: border-box;
+ }
+
+/* Include family fonts */
+body {
+ font-family: "Raleway", Arial, Helvetica, sans-serif;
+ font-size: 1rem;
+ line-height: normal;
+ font-weight: normal;
+ font-style: normal;
+ font-stretch: normal;
+ letter-spacing: normal;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+ 
+
+
+/* Layout */
+html {
+ -ms-text-size-adjust: 100%;
+ -webkit-text-size-adjust: 100%;
+ -moz-text-size-adjust: 100%;
+ font-size: x-small;
+ }
+
+body {
+ margin: 0;
+ background: #000;
+ color: #FFF;
+ position: relative;
+ overflow-y: visible;
+ padding: 0;
+ font-size: 1.6rem;
+ }
+
+a {
+ color: #FFF;
+ text-decoration: underline;
+ }
+
+a:hover {
+ color: #EEEEEE;
+ }
+
+ul {
+ padding: 0;
+ margin: 0;
+ }
+
+h1 {
+ font-size: 4rem;
+ }
+
+h2 {
+ font-size: 3rem;
+ margin: 0 0 3rem 0;
+ }
+
+.errState {
+ border-color: #FA0000;
+ color: #FA0000;
+ }
+
+p {
+ margin: 0 0 1rem 0;
+ line-height: 2rem;
+ }
+ 
+ 
+section {
+ padding: 4rem 1rem 1rem 1rem;
+ text-align: center;
+ }
+
+section p {
+ text-align: left;
+ }
+ 
+ 
+ #Outputs div {
+ padding: 0 1rem;
+ padding-bottom:5rem;
+ } 
+ 
+ 
+ 
+ /* MENU  */
+ 
+ 
+ /* Style the navigation menu */
+.topnav {
+  position: relative;
+  z-index:10;
+}
+
+
+.topnav .fa-bars
+{
+	font-size:36px;
+	padding: 0;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  position:fixed;
+  right:0;
+  padding-right:4.2rem;
+  background:#000;
+  box-shadow: 0px 0px 9px #DDD;
+  height:100%;
+}
+.topnav #myLinks a{
+  border-bottom: 1px solid #333;
+}
+.topnav #myLinks a:last-child{
+  border-bottom: none;
+}
+
+
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 0;
+  Padding:14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height:4.2rem;
+  width:4.2rem;
+  padding: 0;
+  text-align:center;
+  text-decoration: none;
+  
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+ 
+ 
+#helper
+{
+	display:none;	
+	border:1px solid #FFF;
+	padding:20px;
+	margin-top:50px;
+}
+ 
+ 
+section.s_videos
+{
+  background:#FFF;
+  color:#171a20;
+}
+
+section.s_pages a		
+{
+  padding:0 20px;
+  font-weight:bold;
+  text-decoration:none;
+} 
+section.s_pages a:hover
+{
+	text-decoration:underline;
+	
+}
+
+@media (min-width: 768px) {
+	
+
+	
+ body {
+ font-size: 1.8rem;
+ }
+  p {
+ line-height: 3rem;
+ } 
+
+ section {
+ padding: 4rem;
+ }
+  section h2, section ul {
+ position: relative;
+ z-index: 2;
+ }
+  section.tsl {
+ background: url("../img/s_tsl.jpg") top no-repeat;
+ }
+  section.otsl {
+ background: url("../img/s_otsl.jpg") top no-repeat;
+ }
+  section.exp {
+ background: url("../img/s_exp.jpg") top no-repeat;
+ }
+  section.tsl, section.otsl, section.exp {
+ background-size: cover;
+ position: relative;
+ }
+  section.tsl::before, section.otsl::before, section.exp::before {
+ content: '';
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ display: block;
+ position: absolute;
+ background: rgba(0, 0, 0, 0.6);
+ } 
+ 
+ 
+ .s_head {
+ padding: 4rem;
+ }
+  .s_head h1 {
+ margin: 0 0 3rem 0;
+ }
+  .s_head div {
+ width: 75%;
+ margin: 0 auto;
+ } 
+ 
+  #Outputs {
+ margin: 0 auto;
+ }
+
+ 
+ 
+ }
+
+@media (min-width: 992px) {
+.s_double section
+{
+	float:left;
+	width:50%;
+	
+}	
+		
+	
+	
+	
+ section.tsl .form {
+ margin: 0;
+ }
+  section.otsl .form {
+ margin: 0 0 0 40%;
+ } 
+ section.tsl, section.otsl, section.exp {
+ background-attachment: fixed;
+ } }
+
+.s_head {
+ background: url("../img/header.jpg") top no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ }
+
+.s_head h1 {
+ margin: 0 0 2rem 0;
+ }
+
+.s_head p {
+ width: 90%;
+ margin: 0 auto 2rem auto;
+ }
+
+
+/* Layout */
+.form {
+ text-align: left;
+ margin: 2rem 0;
+ }
+
+.form li {
+ display: block;
+ margin: 0 0 1rem 0;
+ }
+
+.form li.SuCGratisShow {
+ display: none;
+ }
+
+.form li label, .form li span {
+ display: block;
+ width: 100%;
+ }
+
+.form li span {
+ padding: 1rem 0;
+ }
+
+ 
+  
+ .form li span.currency
+ {
+	 width:auto;
+	 display:inline;
+	 
+ }
+ 
+ 
+input, select {
+ width: 100%;
+ color: #FFF;
+ background: none;
+ font-family: "Raleway", Arial, Helvetica, sans-serif;
+ font-size: 1.6rem;
+ border: none;
+ border-radius: 0;
+ border-bottom: 0.1rem solid #FFF;
+ padding: 1rem 0;
+ margin: 0 0 1rem 0;
+ appearance: none;
+ }
+ 
+ option
+ {
+  color:#333;
+	 
+ }
+
+input:focus, select:focus {
+ outline: none;
+ box-shadow: none;
+ }
+
+@media (min-width: 768px) {
+ .form {
+ padding: 0 1rem;
+ margin: 4rem auto;
+ }
+  .form li {
+ display: flex;
+ }
+  .form li label {
+ padding: 1rem;
+ }
+  .form li span {
+ width: 50%;
+ }
+  input, select {
+ width: 12.6rem;
+ padding: 0;
+ } }
+
+@media (min-width: 992px) {
+ .form {
+ width: 60%;
+ } }
+
+#additionalCosts {
+ margin: 3rem 0 0 0;
+ }
+
+#additionalCosts li {
+ display: block;
+ width: 100%;
+ }
+
+#additionalCosts li.l_head {
+ margin: 0 0 2rem 0;
+ }
+
+#additionalCosts li ul {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ }
+
+#additionalCosts li ul li {
+ width: 25%;
+ display: block;
+ font-size: 1.4rem;
+ padding: 0 0.2rem;
+ word-break: break-all;
+ }
+
+#additionalCosts li ul li:nth-child(1) {
+ text-align: left;
+ }
+
+#additionalCosts li ul li input, #additionalCosts li ul li select {
+ margin: 0;
+ height: 4.2rem;
+ }
+
+@media (min-width: 992px) {
+ #additionalCosts {
+ width: 60%;
+ margin: 0 auto;
+ }
+  #additionalCosts li ul li {
+ font-size: 1.6rem;
+ } }
+
+button#checkPrice, button#showhelperText {
+ display: block;
+ margin: auto;
+ padding: 5px 11px;
+ background: #222;
+ color: #FFF;
+ border-radius: 3rem;
+ font-size: 2rem;
+ border: 3px solid #FFF;
+ }
+ 
+button#showhelperText
+{
+	float:left;
+}  
+
+button#checkPrice
+{
+	 margin: 5rem auto;
+	 padding: 1.3rem 3rem;	
+}
+
+
+ 
+
+button#checkPrice:hover, button#showhelperText:hover  {
+ background: #FFF;
+ color: #222;
+ border: 3px solid #FFF;
+ }
+
+#Outputs {
+ display: none;
+
+ }
+
+#Outputs h2 {
+ text-align: left;
+ }
+
+#Outputs span {
+ font-weight: bold;
+ }
+
+
+@media (min-width: 992px) {
+ #Outputs {
+ padding: 4rem;
+ width: 75%;
+ }
+  #Outputs div {
+ width: 50%;
+ float:left;
+ padding-bottom:50px;
+ } }
+
+/* Styles for Cine para Todos */
+
+.cine_main div
+{
+	overflow-x:scroll;
+	overflow-Y:hidden;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.cine_main div::-webkit-scrollbar
+{
+	display:none;	
+}
+
+
+.cine_main ul
+{
+	display:block;
+	height:200px;
+}
+.cine_main li
+{
+	Display:block;
+	height:180px;
+	width:320px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:10px;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	position:relative;
+}
+.cine_main li span
+{
+	Display:block;
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	
+	
+}
+.cine_main li a
+{
+	display:block;
+	float:left;
+	padding:0;
+	margin:0;
+	height:45px;
+	line-height:45px;
+	background-color:rgba(200, 200, 200, 0.5);
+	text-decoration:none;
+	font-weight:bold;
+	color:#333;
+}
+.cine_main li a.fullLink
+{
+	height:100%;
+	margin:0;
+	padding:0;
+	background:none;
+	
+}
+
+#fullscreenbutton
+{
+    position: fixed;
+    z-index: 20;
+    top: 20px;
+    left: 50px;
+}
+
+#fullscreenbutton img
+{
+		width:200px;
+		float:left;
+	
+}
+
+.titulo
+{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}

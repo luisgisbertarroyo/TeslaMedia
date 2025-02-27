@@ -1,0 +1,118 @@
+<html>
+
+<head>
+
+        <title>Tesla Media</title>
+        <meta name="description"
+                content="Disfruta de streaming y video bajo demanda en la pantalla de tu Tesla con Tesla Media. Accede a tus plataformas favoritas en un solo lugar.">
+        
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="/css/styles.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200|Roboto:100&amp;display=swap" rel="stylesheet">
+
+        <script src="/js/jquery-3.4.1.js"></script>
+        <script src="/js/jquery.scrollTo.min.js"></script>
+        <script src="/js/menu.js"></script>
+        <script src="../js/canalesCine.js"></script>
+
+</head>
+
+<body>
+
+
+
+        <article>
+                <span id="fullscreenButton">
+                        <a id="dynamicLink" target="_blank">
+                            <img src="../img/pantallacompleta.png" alt="Pantalla Completa">
+                        </a>
+                </span>
+                    
+                <script>
+                        // Obtener el dominio actual donde está alojada la web
+                        const baseUrl = window.location.origin;
+                        const dynamicUrl = `https://www.youtube.com/redirect?q=${baseUrl}`;
+                        
+                        // Asignar la URL al enlace
+                        document.getElementById("dynamicLink").href = dynamicUrl;
+                </script>
+
+                <section class="cine_head">
+
+                        <h1>Tesla Media</h1>
+
+                </section>
+                <section class="cine_main">
+                        <h2>Plataformas</h2>
+                        <div>
+                                <ul id="plataformasOnDemand" style="width: 6120px;">
+                                        <li style="background-image:URL(../img/canales/emby.jpg);"><a
+                                                        href="https://app.emby.media/#!/startup/manualserver.html" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/plex.jpg);"><a
+                                                        href="https://app.plex.tv" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/movistar.jpg);"><a
+                                                        href="https://ver.movistarplus.es/?nv=5" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/amazonprime.png);"><a
+                                                        href="https://www.primevideo.com/region/eu/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/hbomax.png);"><a
+                                                        href="https://play.hbomax.com/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/disneyplus.jpg);"><a
+                                                        href="https://www.disneyplus.com/es-es/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/appletvplus.jpg);"><a
+                                                        href="https://tv.apple.com/es" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/netflix.jpg);"><a
+                                                        href="https://www.netflix.com/es/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/orangetv.png);"><a
+                                                        href="https://orangetv.orange.es/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/vodafonetv.png);"><a
+                                                        href="https://www.vodafonetvonline.es/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/rakutentv.jpg);"><a
+                                                        href="https://rakuten.tv/es" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/skyshowtime.jpg);"><a
+                                                        href="https://www.skyshowtime.com/es/start" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/starz.jpg);"><a
+                                                        href="https://www.starz.com/es/es/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/vimeo.jpg);"><a
+                                                        href="https://vimeo.com/watch" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/youtube.jpg);"><a
+                                                        href="https://www.youtube.com" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/mitele.jpg);"><a
+                                                        href="https://www.mitele.es/" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                        <li style="background-image:URL(../img/canales/dazn.jpg);"><a
+                                                        href="https://www.dazn.com/es-ES/home" class="fullLink"
+                                                        style="width: 100%;">&nbsp;</a></li>
+                                </ul>
+                        </div>
+                        <div id="infoBox"></div>
+                </section>
+        </article>
+</body>
+
+</html>
